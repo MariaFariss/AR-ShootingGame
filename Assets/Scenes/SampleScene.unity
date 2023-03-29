@@ -537,11 +537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 256
+      value: 1060
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 256
+      value: 585
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -580,6 +580,7 @@ GameObject:
   - component: {fileID: 1022847086}
   - component: {fileID: 1022847087}
   - component: {fileID: 1022847088}
+  - component: {fileID: 1022847089}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -670,6 +671,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RaycastPrefab: {fileID: 915933009}
+--- !u!114 &1022847089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022847082}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e320dcae7fd5da84ab1667a21dbb7891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8721799996887100271, guid: 020163b79e3db7847ab6bf4ce19e0702, type: 3}
+  prefabOffset: {x: 0, y: -1, z: 0}
 --- !u!1 &1043024277
 GameObject:
   m_ObjectHideFlags: 0
