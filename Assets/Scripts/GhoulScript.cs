@@ -1,19 +1,27 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GhoulScript : MonoBehaviour
 {
     private Animation animations;
+    private int score = 0;
+    public Text scoreText;
+
+    //public GameObject shoot;
 
     void Start()
     {
         animations = gameObject.GetComponent<Animation>();
-        
+        //shoot.SetActive(false);
+
     }
 
     void Update()
     {
         killObject(gameObject);
+        scoreText.text = "Score: " + score;
+        
     }
     void killObject(GameObject gameObject) //Fonction qui permet de tuer un objet
     {
@@ -29,8 +37,8 @@ public class GhoulScript : MonoBehaviour
                 if (hit.transform.gameObject == gameObject)
                 {
                     animations.Play("Death");
-                    
-
+                    score++;
+                    //shoot.SetActive(true);
                 }
             }
             
