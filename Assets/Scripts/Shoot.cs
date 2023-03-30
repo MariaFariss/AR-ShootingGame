@@ -16,7 +16,7 @@ public class Shoot : MonoBehaviour
         {
             if (Physics.Raycast(arCamera.transform.position, arCamera.transform.forward, out hit))
             {
-                if (hit.transform.tag == "Spider")
+                if (hit.transform.tag == "ghoul")
                 {
                     Destroy(hit.transform.gameObject);
                     Instantiate(explosion, hit.transform.position, hit.transform.rotation);
