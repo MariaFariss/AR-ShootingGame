@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2062943280
 Transform:
   m_ObjectHideFlags: 0
@@ -669,8 +669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f172191bffc78144bb506e7ecfbd9b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arCamera: {fileID: 338580128}
-  explosion: {fileID: 5973576429425424564, guid: 121b5c161b32ffd44a6b8403600303e2, type: 3}
+  arCamera: {fileID: 338580134}
+  projectile: {fileID: 6894354941684483787, guid: 79ef7990b4be1e244a8fce576db48136, type: 3}
+  shootForce: 700
 --- !u!1 &2126706344
 GameObject:
   m_ObjectHideFlags: 0
