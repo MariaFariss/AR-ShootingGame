@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 338580128}
-  explosion: {fileID: 454567381679842577, guid: 51eb11b157d80da49b069cc6e166cd6c, type: 3}
+  explosion: {fileID: 5973576429425424564, guid: 121b5c161b32ffd44a6b8403600303e2, type: 3}
 --- !u!1 &2126706344
 GameObject:
   m_ObjectHideFlags: 0
