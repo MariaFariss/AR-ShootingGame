@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae794578f2d41d4bac048effc61fa48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arObjectToSpawn: {fileID: 1086854591617000961, guid: 0dcd9d12d88e6fe4890f619f88bf78e8, type: 3}
+  arObjectToSpawn: {fileID: 525836694497285882, guid: f21398babe795ed4f8ba39bc44d3359d, type: 3}
   placementIndicator: {fileID: 2048189919}
   shoot: {fileID: 2062943279}
 --- !u!4 &283506812
