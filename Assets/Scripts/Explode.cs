@@ -5,26 +5,35 @@ using UnityEngine;
 public class Explode : MonoBehaviour
 {
     public GameObject explosion;
+    public GameObject scoreToSpawn;
     public GameObject enemyToSpawn;
     Vector3 killPos;
     Quaternion killRot;
     public float waitTime = 3.0f;
+    bool bulletCollission = false; // pour éviter que le bullet ne se détruise plusieurs fois
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "ghoul")
+        if (collision.transform.tag == "ghoul" && bulletCollission == false)
         {
-            Destroy(collision.transform.gameObject); // destroy the ghoul
+            Destroy(collision.transform.gameObject); // destroy le ghoul
+            Scoring.score += 5;
+
+            bulletCollission = true;
+
             killPos = collision.transform.position;
             killRot = collision.transform.rotation;
             StartCoroutine(SpawnEnemyAgain());
-            Instantiate(explosion, collision.transform.position, collision.transform.rotation);
+            Destroy(Instantiate(explosion, collision.transform.position, collision.transform.rotation), waitTime);
+            Destroy(Instantiate(scoreToSpawn, collision.transform.position, collision.transform.rotation), waitTime);
         }
     }
     IEnumerator SpawnEnemyAgain()
     {
         yield return new WaitForSeconds(waitTime);
         Instantiate(enemyToSpawn, killPos, killRot);
+        bulletCollission = false;
+        Destroy(gameObject); // destroy bullet
 
     }
 }
